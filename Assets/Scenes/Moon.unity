@@ -833,6 +833,7 @@ MonoBehaviour:
   - {fileID: 1295026434}
   - {fileID: 1952201900}
   - {fileID: 857886344}
+  uiManager: {fileID: 1787089454}
 --- !u!1 &1221163198 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: edf2ed2e87747124b952026c3d52af9d, type: 3}
@@ -966,6 +967,8 @@ MonoBehaviour:
   - {fileID: 1831184454}
   - {fileID: 1831184453}
   - {fileID: 1831184452}
+  activeIndex: 0
+  uiManager: {fileID: 1787089454}
 --- !u!1 &1640341818
 GameObject:
   m_ObjectHideFlags: 0
@@ -1242,6 +1245,7 @@ MonoBehaviour:
   - {fileID: -407845494, guid: 4b174336825836f4092bb6fd0d30082b, type: 3}
   cupCake: {fileID: 387412050}
   pie: {fileID: 1510305774}
+  cupcakes: {fileID: 1538210140}
 --- !u!1001 &1831184448
 PrefabInstance:
   m_ObjectHideFlags: 0
