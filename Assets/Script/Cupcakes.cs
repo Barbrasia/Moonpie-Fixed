@@ -5,8 +5,11 @@ using UnityEngine;
 public class Cupcakes : MonoBehaviour
 {
     public GameObject[] cupcakes;
-    private int activeIndex = 0;
+    public int activeIndex = 0;
     private Animator animator;
+
+    [SerializeField]
+    private UIManager uiManager;
 
     private void Start()
     {
@@ -28,6 +31,8 @@ public class Cupcakes : MonoBehaviour
             animator.SetBool("ActivateCupcake", true);
             cupcakes[activeIndex].SetActive(true);
             activeIndex++;
+
+            uiManager.UpdateCupcakeIndex(activeIndex);
         }
 
     }
@@ -35,4 +40,6 @@ public class Cupcakes : MonoBehaviour
     {
         animator.SetBool("ActivateCupcake", false);
     }
+
+    // && other.CompareTag("Cupcake")
 }

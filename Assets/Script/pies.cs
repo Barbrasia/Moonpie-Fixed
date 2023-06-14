@@ -8,6 +8,9 @@ public class pies : MonoBehaviour
     private int activeIndex = 0;
     private Animator animator;
 
+    [SerializeField]
+    private UIManager uiManager;
+
     private void Start()
     {
         animator = GetComponentInChildren<Animator>();
@@ -28,6 +31,8 @@ public class pies : MonoBehaviour
             animator.SetBool("ActivatePie", true);
             pie[activeIndex].SetActive(true);
             activeIndex++;
+
+            uiManager.UpdatePieIndex(activeIndex);
         }
 
     }
