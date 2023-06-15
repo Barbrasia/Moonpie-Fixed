@@ -306,17 +306,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.19975881
   m_Center: {x: 0.0040295045, y: -0.001314469, z: 0.09475875}
---- !u!114 &416040140 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 310722237, guid: 904eece4e892af24d9de9fcf97321a7c, type: 3}
-  m_PrefabInstance: {fileID: 636628806}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d0390bd8b8ffd640b34fe25065ff1df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &428414812 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4223520687270131264, guid: fd57cf3ad97d8ea4da90ccaf1b213d22, type: 3}
@@ -342,14 +331,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 350231946974553138, guid: 904eece4e892af24d9de9fcf97321a7c, type: 3}
-      propertyPath: doorAnimation
-      value: 
-      objectReference: {fileID: 416040140}
-    - target: {fileID: 350231946974553138, guid: 904eece4e892af24d9de9fcf97321a7c, type: 3}
-      propertyPath: trayAnimation
-      value: 
-      objectReference: {fileID: 1616750609}
     - target: {fileID: 4013522865961134566, guid: 904eece4e892af24d9de9fcf97321a7c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1186,17 +1167,6 @@ MonoBehaviour:
   rollingPin: {fileID: 952218809}
   uiManager: {fileID: 1787089454}
   rollingPinController: {fileID: 952218809}
---- !u!114 &1616750609 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1912798736, guid: 904eece4e892af24d9de9fcf97321a7c, type: 3}
-  m_PrefabInstance: {fileID: 636628806}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d0390bd8b8ffd640b34fe25065ff1df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1640341818
 GameObject:
   m_ObjectHideFlags: 0
@@ -1339,7 +1309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9eeb16fb1e094e4cae7829d5f3fe304, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickupRange: 1
+  pickupRange: 2
   pickupLayers:
     serializedVersion: 2
     m_Bits: 128
