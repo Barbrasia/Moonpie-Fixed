@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Cupcake
   - Pie
+  - RollingPin
   layers:
   - Default
   - TransparentFX
