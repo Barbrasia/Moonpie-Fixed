@@ -7,6 +7,7 @@ public class pies : MonoBehaviour
     public GameObject[] pie;
     private int activeIndex = 0;
     private Animator animator;
+    public RocketController rocket;
 
     [SerializeField]
     private UIManager uiManager;
@@ -33,6 +34,7 @@ public class pies : MonoBehaviour
             activeIndex++;
 
             uiManager.UpdatePieIndex(activeIndex);
+            rocket.piesCount++;
         }
 
     }

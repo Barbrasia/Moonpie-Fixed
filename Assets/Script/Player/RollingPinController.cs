@@ -7,13 +7,11 @@ using UnityEngine.UI;
 public class RollingPinController : MonoBehaviour
 {
     public GameObject rollingPin;
-    private int cupcakesCount;
-    public Cupcakes cupcakes;
+    public int cupcakesCount;
 
     private void Start()
     {
         rollingPin.SetActive(false);
-        cupcakesCount = cupcakes.activeIndex;
     }
 
     private void Update()

@@ -7,6 +7,7 @@ public class Cupcakes : MonoBehaviour
     public GameObject[] cupcakes;
     public int activeIndex = 0;
     private Animator animator;
+    public RollingPinController rollingPin;
 
     [SerializeField]
     private UIManager uiManager;
@@ -36,6 +37,7 @@ public class Cupcakes : MonoBehaviour
             activeIndex++;
 
             uiManager.UpdateCupcakeIndex(activeIndex);
+            rollingPin.cupcakesCount++;
         }
 
     }

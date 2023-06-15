@@ -10,13 +10,13 @@ public class OpenDoor : MonoBehaviour
 
     public void DoorRotate()
     {
-        transform.DOLocalRotate(new Vector3 (0, 0, doorAngle), doorSpeed);
+        transform.DOLocalRotate(new Vector3 (doorAngle, 0, 0), doorSpeed);
     }
 
     public IEnumerator CloseDoor()
     {
         yield return new WaitForSeconds(5);
-        transform.DOLocalRotate(new Vector3(0, 0, 0), doorSpeed);
+        transform.DOLocalRotate(new Vector3(90, 0, 0), doorSpeed);
     }
 
 }
