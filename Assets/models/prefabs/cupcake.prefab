@@ -9,7 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2169746524054216099}
-  m_Layer: 0
+  - component: {fileID: 4176533618020319174}
+  - component: {fileID: 377058237258037212}
+  m_Layer: 7
   m_Name: cupcake
   m_TagString: Cupcake
   m_Icon: {fileID: 0}
@@ -32,6 +34,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &4176533618020319174
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7702121604963580412}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.18785095
+  m_Center: {x: -0.005488038, y: 0.11733699, z: -0.005921364}
+--- !u!54 &377058237258037212
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7702121604963580412}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &6120464169938395526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87,9 +118,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2367882839103580245, guid: cc38436b14d0f7b4aa9696b89f86aa0a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cc38436b14d0f7b4aa9696b89f86aa0a, type: 3}
       propertyPath: m_Name
       value: cupcake
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cc38436b14d0f7b4aa9696b89f86aa0a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3693022408668691299, guid: cc38436b14d0f7b4aa9696b89f86aa0a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc38436b14d0f7b4aa9696b89f86aa0a, type: 3}
