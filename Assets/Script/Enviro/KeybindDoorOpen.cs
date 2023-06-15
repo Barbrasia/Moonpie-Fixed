@@ -5,7 +5,6 @@ using UnityEngine;
 public class KeybindDoorOpen : MonoBehaviour
 {
     public GameObject Instruction;
-    public OpenDoor openDoor;
     public bool Action = false;
 
     void Start()
@@ -31,12 +30,8 @@ public class KeybindDoorOpen : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.E) && Action == true)
         {
-            openDoor.DoorRotate();
             Instruction.SetActive(false);
             Action = false;
-
-            StartCoroutine(openDoor.CloseDoor());
-
         }
     }
 }

@@ -10,7 +10,7 @@ public class RocketController : MonoBehaviour
 
     private void Update()
     {
-        if (piesCount == 1 && !flag)
+        if (piesCount == 6 && !flag)
         {
             GameObject newObject = new GameObject("Rocket");
 
