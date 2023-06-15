@@ -14,6 +14,8 @@ public class OvenController : MonoBehaviour
     public GameObject tray;
     public DOTweenAnimation trayAnimation;
 
+    public GameObject rollingPin;
+
     private void Awake()
     {
         Rigidbody rb = cake.GetComponent<Rigidbody>();
@@ -32,7 +34,7 @@ public class OvenController : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("RollingPin") && Input.GetKey(KeyCode.E))
+        if (other.CompareTag("Player") && Input.GetKey(KeyCode.E) && rollingPin.activeSelf == true)
         {
             doorAnimation.DOPlay();
             trayAnimation.DOPlay();

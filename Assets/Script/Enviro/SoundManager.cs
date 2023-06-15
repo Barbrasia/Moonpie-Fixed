@@ -14,7 +14,7 @@ public class SoundManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) || (Input.GetKey(KeyCode.E)))
         {
             PlayClickSound();
         }
