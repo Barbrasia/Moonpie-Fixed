@@ -6,7 +6,6 @@ using DG.Tweening;
 public class OvenController : MonoBehaviour
 {
     public GameObject oven;
-    public GameObject cake;
 
     public GameObject door;
     public DOTweenAnimation doorAnimation;
@@ -15,16 +14,6 @@ public class OvenController : MonoBehaviour
     public DOTweenAnimation trayAnimation;
 
     public GameObject rollingPin;
-
-    private void Awake()
-    {
-        Rigidbody rb = cake.GetComponent<Rigidbody>();
-
-        if (rb != null)
-        {
-            rb.isKinematic = true;
-        }
-    }
 
     private void Start()
     {
