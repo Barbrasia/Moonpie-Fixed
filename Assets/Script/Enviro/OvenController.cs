@@ -17,9 +17,9 @@ public class OvenController : MonoBehaviour
         trayAnimation = tray.GetComponent<DOTweenAnimation>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player") && Input.GetKey(KeyCode.E))
         {
             doorAnimation.DOPlay();
             trayAnimation.DOPlay();
