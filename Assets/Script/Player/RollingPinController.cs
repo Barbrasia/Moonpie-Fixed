@@ -1,36 +1,32 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RollingPinController : MonoBehaviour
 {
     public GameObject rollingPin;
     private int cupcakesCount;
-    private bool rollingPinActive;
+    public Cupcakes cupcakes;
 
     private void Start()
     {
         rollingPin.SetActive(false);
-        rollingPinActive = false;
+        cupcakesCount = cupcakes.activeIndex;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void Update()
     {
-        if (other.CompareTag("Player"))
+        if (cupcakesCount == 10)
         {
-            cupcakesCount++;
-
-            if (cupcakesCount >= 9 && !rollingPinActive)
-            {
-                ActivateRollingPin();
-            }
+            ActivateRollingPin();
         }
     }
 
     private void ActivateRollingPin()
     {
         rollingPin.SetActive(true);
-        rollingPinActive = true;
-        Debug.Log("wa³ek");
+        Debug.Log("ale wa³ek");
     }
 }

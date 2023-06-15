@@ -11,6 +11,9 @@ public class Cupcakes : MonoBehaviour
     [SerializeField]
     private UIManager uiManager;
 
+    [SerializeField]
+    private RollingPinController rollingPinController;
+
     private void Start()
     {
         animator = GetComponentInChildren<Animator>();
