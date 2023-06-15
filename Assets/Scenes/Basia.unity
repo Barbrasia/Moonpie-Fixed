@@ -1335,7 +1335,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Instruction: {fileID: 931953595}
-  openDoor: {fileID: 0}
   Action: 1
 --- !u!1 &963194225
 GameObject:
