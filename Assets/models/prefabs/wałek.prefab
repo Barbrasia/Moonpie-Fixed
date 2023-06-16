@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7738524202941869658}
   m_Layer: 0
   m_Name: "wa\u0142ek"
-  m_TagString: Untagged
+  m_TagString: RollingPin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 6102395314221627776}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 45.15036, y: 88.81396, z: 12.04035}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.6099, y: 1.6099, z: 1.6099}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1166380426486523702}
@@ -89,7 +89,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3d8161b6b6ceb2349aba70161072b9d1, type: 2}
     - target: {fileID: 919132149155446097, guid: 0856230b2c98370449186fbc63f40f0d, type: 3}
       propertyPath: m_Name
-      value: walek
+      value: RollingPin
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0856230b2c98370449186fbc63f40f0d, type: 3}
+      propertyPath: m_TagString
+      value: RollingPin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0856230b2c98370449186fbc63f40f0d, type: 3}
