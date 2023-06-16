@@ -39,12 +39,10 @@ public class Cupcakes : MonoBehaviour
             uiManager.UpdateCupcakeIndex(activeIndex);
             rollingPin.cupcakesCount++;
         }
-
     }
+
     private void OnTriggerExit(Collider other)
     {
         animator.SetBool("ActivateCupcake", false);
     }
-
-    // && other.CompareTag("Cupcake")
 }
