@@ -16,7 +16,7 @@ public class RollingPinController : MonoBehaviour
 
     private void Update()
     {
-        if (cupcakesCount == 1)
+        if (cupcakesCount == 10)
         {
             ActivateRollingPin();
         }
@@ -25,6 +25,5 @@ public class RollingPinController : MonoBehaviour
     private void ActivateRollingPin()
     {
         rollingPin.SetActive(true);
-        Debug.Log("ale wa³ek");
     }
 }

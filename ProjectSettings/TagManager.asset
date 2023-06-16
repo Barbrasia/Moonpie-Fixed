@@ -7,6 +7,7 @@ TagManager:
   - Cupcake
   - Pie
   - RollingPin
+  - Pickup
   layers:
   - Default
   - TransparentFX
