@@ -178,7 +178,7 @@ MonoBehaviour:
   doorAnimation: {fileID: 310722237}
   tray: {fileID: 5058241064903766241}
   trayAnimation: {fileID: 1912798736}
-  rollingPin: {fileID: 0}
+  rollingPin: {fileID: 6102395314221627776, guid: 896df6fdf5736f345a7f6a2e1f3bd849, type: 3}
 --- !u!82 &1615392517
 AudioSource:
   m_ObjectHideFlags: 0
